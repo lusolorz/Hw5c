@@ -2,7 +2,9 @@
 cd libpng
 sh ./configure CFLAGS="--coverage -static"
 make clean ; make
-./pngtest 0.png
+for i in large-png-suite/*.png ; do
+	./pngtest $i
+done
 gcov *c
 #write results to a txt file
-$i > otuput.txt
+$i > output.txt
