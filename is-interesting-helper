@@ -5,5 +5,5 @@ make clean ; make
 for i in large-png-suite/*.png ; do
 	./pngtest $i
 done
-gcov *c > pngtest.c.summary
+gcov *c > png-test-summary.txt
 #write results to a txt file

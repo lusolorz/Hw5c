@@ -6,3 +6,5 @@ for i in $* ; do
     ./pngtest $i.png
     #runnin this singular test on all the .c files 
 gcov *.c > png-test-summary.txt
+
+
