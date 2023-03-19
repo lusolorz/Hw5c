@@ -3,6 +3,6 @@
 sh ./configure CFLAGS="--coverage -static"
 make clean ; make
 for i in $* ; do
-    ./pngtest $i
+    ./pngtest $i.png
     #runnin this singular test on all the .c files 
-gcov *.c
+gcov *.c > png-test-summary.txt
