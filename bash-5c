@@ -1,0 +1,9 @@
+#!/bin/bash
+
+sh ./configure CFLAGS="--coverage -static"
+make clean ; make
+for i in *.png ; do
+    ./pngtest $i
+    #runnin this singular test on all the .c files 
+    gcov *.c
+    Creating 'output.c.gcov'

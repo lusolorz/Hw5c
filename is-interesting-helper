@@ -1,0 +1,8 @@
+#!/bin/bash
+cd libpng
+sh ./configure CFLAGS="--coverage -static"
+make clean ; make
+./pngtest 0.png
+gcov *c
+#write results to a txt file
+$i > otuput.txt

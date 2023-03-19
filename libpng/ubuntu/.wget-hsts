@@ -1,0 +1,6 @@
+# HSTS 1.0 Known Hosts database for GNU Wget.
+# Edit at your own risk.
+# <hostname>[:<port>]	<incl. subdomains>	<created>	<max-age>
+rosettacode.org	0	0	1673459514	604800
+web.eecs.umich.edu	0	1	1673325651	63072000
+bootstrap.pypa.io	0	1	1673457824	315360000
